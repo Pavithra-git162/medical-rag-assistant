@@ -1,0 +1,19 @@
+
+.env
+*.key
+*.pem
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+# Colab
+/content/
+*.ipynb
+
+# Secrets
+secrets.toml
+
+# Large vector database
+vectorstore/
+*.faiss
+*.pkl
