@@ -14,8 +14,9 @@ from langchain_groq import ChatGroq
 # ============================================================
 
 POSSIBLE_DB_PATHS = [
+    "/content/db_faiss",
+    "./db_faiss"
     
-    "/content/drive/MyDrive/RAG/vectorstore/db_faiss"
 ]
 
 # Retrieve more internally so that we have a better chance
