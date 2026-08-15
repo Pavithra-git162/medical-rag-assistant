@@ -14,7 +14,7 @@ An intelligent document-based question-answering system that uses Retrieval-Augm
 ## RAG System
 This project uses a Retrieval-Augmented Generation pipeline combining:
 ### Document Retrieval
-Relevant document chunks are retrieved using semantic similarity search from the FAISS vector database.
+- Relevant document chunks are retrieved using semantic similarity search from the FAISS vector database.
 
 
 
