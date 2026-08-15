@@ -64,7 +64,7 @@ medical-rag-assistant/
 
 ## Installation & Setup
 ### Clone the repository
-- git clone https://github.com/Pavithra-git162/medical-rag-assistant.git
+- git clone *https://github.com/Pavithra-git162/medical-rag-assistant.git*
 - cd medical-rag-assistant
 
 ### Install dependencies
@@ -74,7 +74,7 @@ medical-rag-assistant/
 - streamlit run app.py
 
 ### Open in browser
-- http://localhost:8501
+- *http://localhost:8501*
   
 
 
