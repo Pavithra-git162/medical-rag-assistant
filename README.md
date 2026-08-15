@@ -42,7 +42,7 @@ This project uses a Retrieval-Augmented Generation pipeline combining:
 - FAISS
 
 ### Embeddings
-- Sentence Transformers
+- Sentence Transformers (all-MiniLM-L6-v2)
 
 
 ### AI Integration
