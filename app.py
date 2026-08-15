@@ -13,11 +13,27 @@ from langchain_groq import ChatGroq
 # CONFIGURATION
 # ============================================================
 
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
+
 POSSIBLE_DB_PATHS = [
-    "/content/db_faiss",
-    "./db_faiss"
-    
+    BASE_DIR / "db_faiss",
+    BASE_DIR
 ]
+
+DB_PATH = next(
+    (
+        p for p in POSSIBLE_DB_PATHS
+        if (p / "index.faiss").exists()
+        and (p / "index.pkl").exists()
+    ),
+    None
+)
+
+if DB_PATH is None:
+    st.error("FAISS database not found.")
+    st.stop()
 
 # Retrieve more internally so that we have a better chance
 # of getting continuation chunks from the same page.
@@ -46,27 +62,6 @@ st.set_page_config(
 st.title("🩺 Medical RAG Assistant")
 
 
-# ============================================================
-# FIND FAISS DATABASE
-# ============================================================
-
-def find_database():
-
-    for path in POSSIBLE_DB_PATHS:
-
-        if os.path.exists(path):
-            return path
-
-    return None
-
-
-DB_FAISS_PATH = find_database()
-
-
-if DB_FAISS_PATH is None:
-
-    st.error("FAISS database not found.")
-    st.stop()
 
 
 # ============================================================
@@ -94,9 +89,9 @@ def load_vectorstore():
     )
 
     db = FAISS.load_local(
-        DB_FAISS_PATH,
-        embeddings,
-        allow_dangerous_deserialization=True
+    str(DB_PATH),
+    embeddings,
+    allow_dangerous_deserialization=True
     )
 
     return db
