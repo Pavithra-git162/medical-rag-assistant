@@ -34,6 +34,8 @@ This project uses a Retrieval-Augmented Generation pipeline combining:
 
 ### Backend
 - Python
+
+### RAG Framework
 - LangChain
 
 ### Vector Database
