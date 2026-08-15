@@ -49,6 +49,17 @@ This project uses a Retrieval-Augmented Generation pipeline combining:
 
 ### Deployment
 - Streamlit Community Cloud
+
+## Project Structure
+
+Medical-RAG-Assistant/
+│
+├── app.py
+├── requirements.txt
+├── LICENSE
+├── index.faiss
+└── index.pkl
+  
   
 
 
