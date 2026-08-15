@@ -52,7 +52,7 @@ This project uses a Retrieval-Augmented Generation pipeline combining:
 
 ## Project Structure
 ```text
-### Medical-RAG-Assistant/
+Medical-RAG-Assistant/
 ├── app.py/
 ├── requirements.txt/
 ├── LICENSE/
