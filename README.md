@@ -22,7 +22,7 @@ This project uses a Retrieval-Augmented Generation pipeline combining:
 ### FAISS Vector Database
 - FAISS is used to efficiently search for the most relevant document chunks based on semantic similarity.
 
-### AI Response Generation
+### Groq LLM
 - The retrieved document content is passed to the Groq LLM as context to generate a natural-language answer.
 
 ### Source References
