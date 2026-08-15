@@ -28,6 +28,31 @@ This project uses a Retrieval-Augmented Generation pipeline combining:
 ### Source References
 - The application displays the relevant document pages used to generate the answer, allowing users to trace the response back to the original documents.
 
+## Tech Stack 
+### Frontend
+- Streamlit
+
+### Backend
+- Python
+- LangChain
+
+### Vector Database
+- FAISS
+
+### Embeddings
+- Sentence Transformers
+
+
+### AI Integration
+- Groq API
+
+
+### Deployment
+- Streamlit Community Cloud
+  
+
+
+
 
   
 
