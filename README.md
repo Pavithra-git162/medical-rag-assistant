@@ -54,7 +54,7 @@ This project uses a Retrieval-Augmented Generation pipeline combining:
 
 ## Project Structure
 ```text
-Medical-RAG-Assistant/
+medical-rag-assistant/
 ├── app.py/
 ├── requirements.txt/
 ├── LICENSE/
