@@ -51,13 +51,30 @@ This project uses a Retrieval-Augmented Generation pipeline combining:
 - Streamlit Community Cloud
 
 ## Project Structure
-```text
-Medical-RAG-Assistant/
+### Medical-RAG-Assistant/
 ├── app.py
 ├── requirements.txt
 ├── LICENSE
 ├── index.faiss
 └── index.pkl
+
+## Installation & Setup
+### Clone the repository
+- git clone https://github.com/Pavithra-git162/medical-rag-assistant.git
+- cd medical-rag-assistant
+
+### Install dependencies
+- pip install -r requirements.txt
+
+### Run the application
+- streamlit run app.py
+
+### Open in browser
+- http://localhost:8501
+  
+
+
+
   
   
 
