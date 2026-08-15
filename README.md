@@ -52,10 +52,10 @@ This project uses a Retrieval-Augmented Generation pipeline combining:
 
 ## Project Structure
 ### Medical-RAG-Assistant/
-├── app.py
-├── requirements.txt
-├── LICENSE
-├── index.faiss
+├── app.py/
+├── requirements.txt/
+├── LICENSE/
+├── index.faiss/
 └── index.pkl
 
 ## Installation & Setup
