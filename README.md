@@ -26,7 +26,7 @@ This project uses a Retrieval-Augmented Generation pipeline combining:
 - The retrieved document content is passed to the Groq LLM as context to generate a natural-language answer.
 
 ### Source References
-The application displays the relevant document pages used to generate the answer, allowing users to trace the response back to the original documents.
+- The application displays the relevant document pages used to generate the answer, allowing users to trace the response back to the original documents.
 
 
   
